@@ -34,11 +34,11 @@ const userSchema = new mongoose.Schema({
     coverImage: {
         type: String,
     },
-    watchHistory: {
+    watchHistory: [{
         type: Schema.Types.ObjectId,
         ref: "Video"
 
-    },
+    }],
     refreshToken: { type: String }
 },
     {

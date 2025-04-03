@@ -10,6 +10,11 @@ const userSchema = new mongoose.Schema({
         lowercase: true,
         trim: true
     },
+    fullName: {
+        type: String,
+        required: true,
+        trim: true
+    },
     email: {
         type: String,
         required: true,
@@ -30,7 +35,7 @@ const userSchema = new mongoose.Schema({
         type: String,
     },
     watchHistory: {
-        type: Schema.types.ObjectId,
+        type: Schema.Types.ObjectId,
         ref: "Video"
 
     },

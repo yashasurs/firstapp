@@ -19,3 +19,4 @@ const cloudinaryFileUpload = async (filePath) => {
         throw error;
     }
 }
+export default cloudinaryFileUpload;
